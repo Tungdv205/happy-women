@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe5ef">
+  <title>Gửi bạn một chút dịu dàng — 20/10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+  <div class="heart-layer" id="heartLayer" aria-hidden="true"></div>
+
+  <button class="music-button" id="musicButton" type="button" aria-pressed="false">
+    <span id="musicIcon">♫</span>
+    <span id="musicText">Bật nhạc</span>
+  </button>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="music/2010.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="page">
+    <section class="intro" id="intro">
+      <div class="sparkle sparkle-one">✦</div>
+      <div class="sparkle sparkle-two">✧</div>
+      <div class="flower flower-left">🌷</div>
+      <div class="flower flower-right">🌹</div>
+
+      <p class="eyebrow">Gửi bạn một chút dịu dàng</p>
+      <h1>Chúc mừng<br><span>Ngày Phụ nữ Việt Nam</span></h1>
+      <div class="date">20 <span>·</span> 10</div>
+      <p class="subtitle">Một chút ngọt ngào dành riêng cho bạn ♡</p>
+
+      <button class="open-button" id="openButton" type="button">
+        <span class="gift-icon">🎁</span> Mở thiệp bất ngờ
+      </button>
+      <p class="hint">Có một lời chúc đang chờ bạn...</p>
+    </section>
+
+    <section class="letter-wrap" id="letterWrap" aria-live="polite" aria-hidden="true">
+      <div class="letter-glow"></div>
+      <article class="letter" id="letter">
+        <div class="letter-top">♡  20 — 10  ♡</div>
+        <div class="letter-flower">🌸</div>
+        <p class="letter-label"></p>
+        <h2>Gửi bạn</h2>
+        <p class="message" id="messageText"></p>
+        <p class="signature">Mong những điều dịu dàng nhất<br>luôn tìm đến bạn <span>♡</span></p>
+        <div class="letter-bottom">Happy Vietnamese Women's Day</div>
+      </article>
+      <button class="again-button" id="againButton" type="button">Đọc lại lời chúc ↻</button>
+    </section>
+
+    <footer>Made with <span>♥</span> just for you · 20/10</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
